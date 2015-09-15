@@ -1,0 +1,23 @@
+{
+  "name": "wp-starter",
+  "version": "0.1.0",
+  "description": "Experimental starter repo for WordPress projects with WordPress plugins, themes, and even the core declared as project dependencies",
+  "main": "index.php",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "grunt-composer": "^0.4.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-nodeunit": "~0.4.1"
+  }
+}
