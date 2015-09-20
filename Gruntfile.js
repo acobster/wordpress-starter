@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     composer: {
       options: {
-        composerLocation: '/home/tamayo/bin/composer' 
+        composerLocation: '/usr/local/bin/composer' 
       },
       wordpress: {}
     },
@@ -16,12 +16,21 @@ module.exports = function(grunt) {
       'public/wp/wp-content/themes/twentytwelve',
       'public/wp/wp-content/themes/twentythirteen',
       'public/wp/wp-content/themes/twentyfourteen'
-    ]
+    ],
+    "file-creator": {
+      "env_file": {
+        ".env": function(fs, fd, done) {
+          fs.writeSync(fd, 'development');
+          done();
+        }
+      }
+    }
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-composer');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-file-creator');
 
   // Default task.
   grunt.registerTask('default', ['composer:wordpress:install', 'clean']);
