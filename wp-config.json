@@ -1,0 +1,10 @@
+{
+	"environments": {
+		"development": {
+			"DB_NAME": "strong_support",
+			"DB_USER": "strong_support",
+			"DB_PASSWORD": "ViJub(QOJr",
+			"DB_HOST": "localhost:/tmp/mysql.sock"
+		}
+	}
+}
