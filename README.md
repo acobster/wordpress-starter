@@ -19,7 +19,7 @@ Pull in the core/plugins/themes at deploy time and symlink everything together. 
 Assuming you've set up your MySQL database already, run:
 
 ```
-$ git clone git@bitbucket.org:acobster/wordpress-starter.git ~/.grunt-init/wordpress-starter
+$ git clone git@github.com:acobster/wordpress-starter.git ~/.grunt-init/wordpress-starter
 $ grunt-init wordpress-starter
 ```
 
